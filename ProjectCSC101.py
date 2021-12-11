@@ -14,12 +14,15 @@ def check_words(correct_guesses,incorrect_guesses):
 def check_total(correct_guesses,incorrect_guesses):
 #return winner if the number of correct guesses greater than 4
     if correct_guesses > 4:
+        print('Winner')
         return 'Winner'
 # return loser if the number of incorrect guesses greather than 4
     if incorrect_guesses > 4:
+        print('Loser')
         return 'Loser'
 # return draw if the number of correct and incorrect guesses are equal
     if correct_guesses == incorrect_guesses:
+        print('Draw')
         return 'Draw'
 
 #The main function runs the guessing game
@@ -44,5 +47,5 @@ def main():
     
 
 #This determines if the player is a wins, loses, or draws
-    print(check_total(correct_guesses,incorrect_guesses))
+    check_total(correct_guesses,incorrect_guesses)
 main()
